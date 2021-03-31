@@ -158,9 +158,13 @@
         if ($('.search-wrap').hasClass('active')) {
             $('.search-wrap').removeClass('active');
             return;
-        } 
+        }
         $('.search-wrap').addClass('active');
         $('.search-wrap input').focus();
+    });
+
+    $('.forward-btn').on('click', function () {
+        $('.floating-socials').toggleClass('show');
     });
 
     $(document).on('click', '.close-keyword', function () {

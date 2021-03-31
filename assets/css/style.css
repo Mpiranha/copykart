@@ -48,6 +48,7 @@ html {
     font-size: 0.9rem;
     margin-right: 0.8rem;
     cursor: pointer;
+    color: #000000;
 }
 
 
@@ -63,6 +64,7 @@ html {
 
 .right-icons-sm {
     width: 1.2rem;
+    margin-right: 0.3rem;
 }
 
 .secondary-actions {
@@ -537,6 +539,7 @@ html {
 .log-header {
     display: flex;
     align-items: center;
+
 }
 
 .log-header a,
@@ -551,11 +554,21 @@ html {
     margin-right: 0.4rem;
 }
 
-.log-header .btn-activity {
+.log-header {
+    margin-top: 1rem;
     color: var(--assent-color);
-    border-radius: 0.8rem 0 0 0.8rem;
+    border-radius: 0.5rem;
     background-color: #f2f5fb;
-    margin-right: 0.5rem;
+    padding: 0.3rem 0.5rem 0.3rem 1.5rem;
+}
+
+.log-header .text-wrap {
+    font-size: 0.8rem;
+}
+
+.log-header div span::before {
+    font-size: 1rem;
+    margin-right: 0.7rem;
 }
 
 .log-header .btn-road-map {
@@ -613,6 +626,7 @@ html {
     padding: 2.5rem 2rem;
     margin-bottom: 2rem;
     cursor: pointer;
+    min-height: 177px;
 }
 
 .campaign-box.active {
@@ -639,6 +653,53 @@ html {
     font-size: 1.3rem;
     color: var(--assent-color);
 }
+
+.campaign-box-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign-desc {
+    font-size: 0.7rem;
+    color: #2263de;
+    margin-top: 0.6rem;
+    display: none;
+}
+
+.info-campaign::before {
+    font-size: 0.5rem;
+    color: #2263de;
+    margin-right: 0.2rem;
+
+}
+
+.campaign-box:hover .campaign-box-inner {
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #bbd4f4;
+    padding-bottom: 0.6rem;
+}
+
+.campaign-box:hover .campaign-image-wrap {
+    margin-bottom: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.campaign-box:hover .campaign-box-inner .campaign-name {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.campaign-box:hover .campaign-image-wrap img {
+    width: 2.5rem;
+}
+
+.campaign-box:hover .campaign-desc {
+    display: block;
+}
+
+
 
 .facebook {
     background-color: #d1e3f6 !important;
@@ -739,7 +800,7 @@ html {
 .campaign-title {
     font-size: 0.9rem;
     background-color: #f4f7fa;
-    padding: 0.6rem 0.8rem;
+    padding: 0 0 0 0.8rem;
     display: inline-flex;
     align-items: center;
     border-radius: 0.5rem;
@@ -747,14 +808,16 @@ html {
 }
 
 .campaign-title input {
-    border: none;
+    border: 1px solid #b1b3b4;
     background-color: transparent;
     display: inline-block;
-    padding: 0.1rem 0.3rem;
+    padding: 0.6rem 0.3rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
 
 .campaign-title input:focus {
-    border: 1px solid #000000;
+    border: 1px solid #b1b3b4;
 }
 
 .campaign-title img {
@@ -1224,6 +1287,8 @@ input:checked+.slider:before {
     z-index: 999;
     box-shadow: 1px 0 7px #bebebe;
     border-radius: 1.5rem;
+    display: none;
+    animation: pop-out 0.5s 1 linear;
 }
 
 .floating-socials .floating-socials-item img {
@@ -2449,12 +2514,17 @@ input:checked+.slider:before {
     border: 1px solid rgb(196, 196, 196);
     background-color: white;
     cursor: default;
-    color: rgb(82, 58, 231);
+    color: #2263de;
     font-weight: bold;
     display: flex;
     flex-direction: row;
     -moz-box-pack: justify;
     justify-content: space-between;
+}
+
+.campaign-title .edit-icon {
+    width: 0.8rem !important;
+    margin-left: 0.5rem;
 }
 
 .keyword-items:hover {
@@ -2506,5 +2576,19 @@ input:checked+.slider:before {
 
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes pop-out {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
