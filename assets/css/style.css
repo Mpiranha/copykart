@@ -673,29 +673,29 @@ html {
 
 }
 
-.campaign-box:hover .campaign-box-inner {
+.campaign-box.with-hover-desc:hover .campaign-box-inner {
     flex-direction: row;
     align-items: center;
     border-bottom: 1px solid #bbd4f4;
     padding-bottom: 0.6rem;
 }
 
-.campaign-box:hover .campaign-image-wrap {
+.campaign-box.with-hover-desc:hover .campaign-image-wrap {
     margin-bottom: 0;
     width: 2.5rem;
     height: 2.5rem;
 }
 
-.campaign-box:hover .campaign-box-inner .campaign-name {
+.campaign-box.with-hover-desc:hover .campaign-box-inner .campaign-name {
     font-size: 0.9rem;
     margin-left: 0.5rem;
 }
 
-.campaign-box:hover .campaign-image-wrap img {
+.campaign-box.with-hover-desc:hover .campaign-image-wrap img {
     width: 2.5rem;
 }
 
-.campaign-box:hover .campaign-desc {
+.campaign-box.with-hover-desc:hover .campaign-desc {
     display: block;
 }
 
