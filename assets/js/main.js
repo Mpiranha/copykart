@@ -167,10 +167,69 @@
         $('.floating-socials').toggleClass('show');
     });
 
+    $('.editor-top').on('click', function () {
+        $(this).attr('id', 'top-content');
+    });
+
+    $('.ql-picker-label').on('mousedown', function (e) {
+        e.preventDefault();
+    });
+
+    $('.image-box').each(function () {
+        $(this).on('click', function () {
+            // $(this).children('input').prop("checked", true);
+            // console.log($(this).children('input').prop('checked'));
+            // //removeCheck($(this));
+            for (var i = 0; i < $('.image-box').children('input').length; i++) {
+                $('.image-box').children('input')[i].checked = false;
+            }
+            $(this).children('input').prop("checked", true);
+        });
+    });
+
+    $('.editor-image-wrap img').on('click', function () {
+        $('.bd-example-modal-lg').modal('show')
+    });
+
+
+
+    // var checkboxes = document.getElementsByTagName('input');
+    // for (var i=0; i<checkboxes.length; i++)  {
+    //     if (checkboxes[i].type == 'checkbox')   {
+    //       checkboxes[i].checked = false;
+    //     }
+    //   }
+
     $(document).on('click', '.close-keyword', function () {
         // This will work!
         removeTag(this);
     });
+    autosize($('#textarea-title'));
+    autosize($('#textarea-desc'));
+    editCopy('#title-comp', '#textarea-title');
+    editCopy('#desc-comp', '#textarea-desc');
+
+    function editCopy(elem, targetArea) {
+        $(elem).on('click', function () {
+            $(targetArea).val($(this).text().replace(/\s+/g, " ").trim());
+            console.log($.trim($(this).text()));
+            $(this).css('display', 'none');
+            $(targetArea).css('display', 'inline');
+        });
+
+        $(targetArea).on('blur', function () {
+            $(elem).text($(this).val());
+            $(this).css('display', 'none');
+            $(elem).css('display', 'block');
+        });
+    }
+
+
+    $('body').click(function () {
+        // closeMenu();
+
+    });
+
 
     function removeTag(x) {
         $(x).parent().parent().parent('.keyword-main').remove();
@@ -188,6 +247,12 @@
         console.log(keywords);
     }
 
+    function removeCheck(elem) {
+        $(elem).each(function () {
+            $(this).children('input').prop('checked', false);
+        });
+    }
+
 
 
 
@@ -203,6 +268,17 @@
             '</div>';
         target.append(elem);
     }
+
+    var closeMenu = function (elem) {
+        elem.each(function () {
+            if ($(this).hasClass('show') || $(this).hasClass('show-flex')) {
+                $(this).removeClass('');
+            }
+
+        });
+    };
+
+
 
 
 
