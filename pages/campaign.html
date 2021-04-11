@@ -20,7 +20,7 @@
 
 <body>
     <div class="container-fluid px-0">
-         <nav class="navbar navbar-expand navbar-light navmenu">
+        <nav class="navbar navbar-expand navbar-light navmenu">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/icons/logo.svg" alt="logo">
             </a>
@@ -268,12 +268,18 @@
         <div class="container">
             <div class="page-desc">My Campaigns</div>
             <div class="d-flex align-items-center justify-content-between">
-                <div class="campaign-title">
+                <div class="campaign-title select-campaign">
                     <img class="campaign-target-img" src="../assets/icons/Create.svg" alt="" srcset="">
-                    <span class="campaign-target-text">Facebook Ad Copy</span>
-                    <span class="flaticon-arrow-down-sign-to-navigate icons icon-drop"></span>
+                    <span class="campaign-target-text">All Campaigns</span>
+                    <i class="flaticon-arrow-down-sign-to-navigate icons icon-drop"></i>
                     <div class="campaigns-list-wrap">
                         <ul class="nav flex-column">
+                            <li class="nav-item" data-img="../assets/icons/Help.svg" data-name="All Campaigns">
+                                <a class="nav-link" href="">
+                                    <img class="create-icons" src="../assets/icons/Help.svg" alt="All icon">
+                                    All Campaigns
+                                </a>
+                            </li>
                             <li class="nav-item" data-img="../assets/icons/Help.svg" data-name="Facebook Ad Copy">
                                 <a class="nav-link" href="">
                                     <img class="create-icons" src="../assets/icons/Help.svg" alt="facebook icon">
@@ -344,7 +350,7 @@
 
                 <div class="d-flex">
                     <div class="date-selector">
-                        <span class="flaticon-calendar icons calendar-icon"></span>
+                        <i class="flaticon-calendar icons calendar-icon"></i>
                         <select id="my-select" class="form-control no-shadow" name="">
                             <option selected>Quick Dates</option>
                         </select>
@@ -353,7 +359,7 @@
                     <div class="search-wrap">
                         <input placeholder="Search... Enter ↵" type="text" class="search-input">
                         <button class="btn btn-search-campaign">
-                            <span class="flaticon-search icons"></span>
+                            <i class="flaticon-search icons"></i>
                         </button>
                     </div>
                 </div>
@@ -363,12 +369,12 @@
             <div class="row facebook-wrap">
                 <div class="col-3">
                     <div class="campaign-box create-box" data-toggle="modal" data-target="#modal-create">
-                        <span class="flaticon-add icons create-icn"></span>
+                        <i class="flaticon-add icons create-icn"></i>
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="campaign-box" data-toggle="modal" data-target="#modal-create">
-                        <div class="d-flex align-items-center mb-3">
+                    <div class="campaign-box created-campaign" data-toggle="modal" data-target="#modal-create">
+                        <div class="d-flex align-items-center mb-2">
                             <div class="campaign-image-wrap mb-0">
                                 <img src="../assets/icons/Copykart icons/create campaign icons/facebook.svg" alt="">
                             </div>
@@ -379,6 +385,26 @@
 
                         <div class="campaign-name">
                             Spotify Ad Copy
+                        </div>
+
+                        <div class="campaign-bottom">
+                            <div class="date-section">
+                                Date created: 1/02/2021
+                            </div>
+                            <div class="action-bar">
+                                <nav class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="flaticon-edit"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="flaticon-delete"></i>
+                                        </a>
+                                    </li>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
