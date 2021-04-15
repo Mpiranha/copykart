@@ -107,8 +107,15 @@
         }
     });
 
-    $('.open-slide-in').on('click', function () {
-        $('.slide-in-wrap').toggleClass('show');
+    // $('.open-slide-in').on('click', function () {
+    //     $('.slide-in-wrap').toggleClass('show');
+    // });
+
+    $('.open-slide-in').each(function () {
+        $(this).on('click', function () {
+            $($(this).attr('data-target')).toggleClass('show');
+            console.log($(this).attr('data-target'));
+        });
     });
 
     $('.btn-close').on('click', function () {

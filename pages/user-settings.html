@@ -13,7 +13,7 @@
 
 <body>
     <div class="container-fluid px-0">
-         <nav class="navbar navbar-expand navbar-light navmenu">
+        <nav class="navbar navbar-expand navbar-light navmenu">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/icons/logo.svg" alt="logo">
             </a>
@@ -276,174 +276,272 @@
 
                 <div class="tab-content user-settings-tabs">
                     <div class="tab-pane container active" id="home">
-                        <div class="row justify-content-between">
-                            <div class="col-6">
-                                <div class="x-padding-right">
-                                    <div class="title">User Profile</div>
-                                    <form action="" class="user-form">
-                                        <div class="form-group">
-                                            <label for="">Name</label>
-                                            <input type="text" name="" id="" class="form-control user-setting-input"
-                                                placeholder="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Email Address</label>
-                                            <input type="text" name="" id="" class="form-control user-setting-input"
-                                                placeholder="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Profile Image</label>
-                                            <div class="profile-image-upload">
-                                                <img class="upload-img" src="../assets/icons/profile-user.svg" alt="">
-                                                <div class="upload-section">
-                                                    <div class="desc">Recommended Size: Less Than 2Mb (130 X 130)</div>
-                                                    <div class="btn btn-upload-img">
-                                                        <input class="" type="file" name="" id="">
-                                                        Upload Image <span class="flaticon-right-arrow icons"></span>
+                        <div class="user-settings-inner-wrap">
+                            <ul class="nav nav-pills flex-column user-settings-inner-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#user-profile">Contact Info</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#set-password">Password</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#company-profile">Company Profile</a>
+                                </li>
+                            </ul>
+
+
+                            <div class="tab-content flex-grow-1">
+                                <div class="tab-pane container active" id="user-profile">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="x-padding-right">
+                                                <div class="title">User Profile</div>
+                                                <form action="" class="user-form">
+                                                    <div class="form-group">
+                                                        <label for="">Name</label>
+                                                        <input type="text" name="" id=""
+                                                            class="form-control user-setting-input" placeholder="">
                                                     </div>
-                                                </div>
+                                                    <div class="form-group">
+                                                        <label for="">Email Address</label>
+                                                        <input type="text" name="" id=""
+                                                            class="form-control user-setting-input" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">Profile Image</label>
+                                                        <div class="profile-image-upload mt-3">
+                                                            <img class="upload-img"
+                                                                src="../assets/icons/profile-user.svg" alt="">
+                                                            <div class="upload-section">
+                                                                <div class="btn btn-upload-img mt-0">
+                                                                    <input class="" type="file" name="" id="">
+                                                                    Upload Image <i
+                                                                        class="flaticon-right-arrow icons"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex mt-5">
+                                                        <button class="btn btn-primary btn-save">Save changes</button>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container fade" id="set-password">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="x-padding-right">
+                                                <div class="title">Update Password</div>
+                                                <form action="" class="user-form">
+                                                    <div class="form-group">
+                                                        <label for="">Old Password</label>
+                                                        <input type="password" name="" id=""
+                                                            class="form-control user-setting-input" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">New Password</label>
+                                                        <input type="password" name="" id=""
+                                                            class="form-control user-setting-input" placeholder="">
+                                                    </div>
+                                                    <div class="d-flex mt-5">
+                                                        <button class="btn btn-primary btn-save">Save changes</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane container fade" id="company-profile">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="x-padding-right">
+                                                <div class="title">Your Company Information</div>
+                                                <form action="#" class="user-form">
+                                                    <div class="form-group">
+                                                        <label for="">Company Name</label>
+                                                        <input type="text" name="" id=""
+                                                            class="form-control user-setting-input" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">Company URL</label>
+                                                        <input type="url" name="" id=""
+                                                            class="form-control user-setting-input" placeholder="">
+                                                    </div>
 
-                                        <div class="d-flex justify-content-end mt-4">
-                                            <button class="btn btn-primary btn-save">Save changes</button>
+                                                    <div class="form-group">
+                                                        <label for="">Company Description</label>
+                                                        <textarea rows="4" class="form-control user-setting-input"
+                                                            placeholder="Eg. We sell everything nice and good.">
+                                                        </textarea>
+
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="">Tone or Product Keywords</label>
+                                                        <input type="text" class="form-control user-setting-input"
+                                                            name="" id="keyword" placeholder="Enter ↵" value="">
+                                                    </div>
+
+                                                    <div id="keyword-list" class="my-1">
+
+                                                    </div>
+
+
+                                                    <div class="d-flex my-5">
+                                                        <button class="btn btn-primary btn-save">Update</button>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="x-padding-left">
-                                    <div class="title">Update Password</div>
-                                    <form action="" class="user-form">
-                                        <div class="form-group">
-                                            <label for="">Old Password</label>
-                                            <input type="password" name="" id="" class="form-control user-setting-input"
-                                                placeholder="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">New Password</label>
-                                            <input type="password" name="" id="" class="form-control user-setting-input"
-                                                placeholder="">
-                                        </div>
-                                        <div class="d-flex justify-content-end mt-4">
-                                            <button class="btn btn-primary btn-save">Save changes</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+
+
+
                         </div>
                     </div>
                     <div class="tab-pane container fade" id="menu1">
-                        <div class="social-section-wrap">
-                            <div class="integeration-title">
-                                Social media Integration
-                            </div>
+                        <div class="user-settings-inner-wrap">
+                            <ul class="nav nav-pills flex-column user-settings-inner-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="pill" href="#social-section-one">Social
+                                        Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#social-section-two">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="pill" href="#social-section-three">Auto
+                                        Responder</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content flex-grow-1">
+                                <div class="tab-pane container active" id="social-section-one">
+                                    <div class="x-padding-social-right">
+                                        <div class="social-section-wrap">
+                                            <div class="integeration-title">
+                                                Social media Integration
+                                            </div>
 
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-                                <div class="integeration-social-title">Ejem Odinakachi Austin</div>
-                                <div class="integretion-actions">
-                                    <button class="btn btn-integeration">Refresh Token
-                                        <span class="flaticon-settings icons"></span>
-                                    </button>
-                                    <button class="btn btn-integeration mr-0">Disconnect
-                                        <span class="flaticon-delete icons"></span>
-                                    </button>
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+                                                <div class="integeration-social-title">Ejem Odinakachi Austin</div>
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-integeration">Refresh Token
+                                                        <i class="flaticon-reload icons"></i>
+                                                    </button>
+                                                    <button class="btn btn-integeration mr-0">Disconnect
+                                                        <i class="flaticon-delete icons"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+                                                <div class="integeration-social-title">Austin Ejem Jnr</div>
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-integeration">Refresh Token
+                                                        <i class="flaticon-reload icons"></i>
+                                                    </button>
+                                                    <button class="btn btn-integeration mr-0">Disconnect
+                                                        <i class="flaticon-delete icons"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+                                                <div class="integeration-social-title">Mr. Ejem Austin O.</div>
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-integeration">Refresh Token
+                                                        <i class="flaticon-reload icons"></i>
+                                                    </button>
+                                                    <button class="btn btn-integeration mr-0">Disconnect
+                                                        <i class="flaticon-delete icons"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+                                                <div class="integeration-social-title">Twitter</div>
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-connect-social no-shadow">
+                                                        <img src="../assets/icons/Create-red.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-                                <div class="integeration-social-title">Austin Ejem Jnr</div>
-                                <div class="integretion-actions">
-                                    <button class="btn btn-integeration">Refresh Token
-                                        <span class="flaticon-settings icons"></span>
-                                    </button>
-                                    <button class="btn btn-integeration mr-0">Disconnect
-                                        <span class="flaticon-delete icons"></span>
-                                    </button>
+                                <div class="tab-pane container fade" id="social-section-two">
+                                    <div class="x-padding-social-right">
+                                        <div class="social-section-wrap">
+                                            <div class="integeration-title">
+                                                Blog Integration
+                                            </div>
+
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+                                                <div class="integeration-social-title">Learn With Austin</div>
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-integeration mr-0">Disconnect
+                                                        <i class="flaticon-delete icons"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+                                                <div class="integeration-social-title">Austin Ejem</div>
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-integeration mr-0">Disconnect
+                                                        <i class="flaticon-delete icons"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-                                <div class="integeration-social-title">Mr. Ejem Austin O.</div>
-                                <div class="integretion-actions">
-                                    <button class="btn btn-integeration">Refresh Token
-                                        <span class="flaticon-settings icons"></span>
-                                    </button>
-                                    <button class="btn btn-integeration mr-0">Disconnect
-                                        <span class="flaticon-delete icons"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-                                <div class="integeration-social-title">Twitter</div>
-                                <div class="integretion-actions">
-                                    <button class="btn btn-connect-social no-shadow">
-                                        <img src="../assets/icons/Create-red.svg" alt="">
-                                    </button>
+                                <div class="tab-pane container fade" id="social-section-three">
+                                    <div class="x-padding-social-right">
+                                        <div class="social-section-wrap">
+                                            <div class="integeration-title">
+                                                Autoresponder Integration
+                                            </div>
+
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-integeration mr-0">Disconnect
+                                                        <i class="flaticon-delete icons"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-integeration mr-0">Disconnect
+                                                        <i class="flaticon-delete icons"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="integeration-item">
+                                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
+
+                                                <div class="integretion-actions">
+                                                    <button class="btn btn-integeration mr-0">Disconnect
+                                                        <i class="flaticon-delete icons"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="social-section-wrap">
-                            <div class="integeration-title">
-                                Blog Integration
-                            </div>
-
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-                                <div class="integeration-social-title">Learn With Austin</div>
-                                <div class="integretion-actions">
-                                    <button class="btn btn-integeration mr-0">Disconnect
-                                        <span class="flaticon-delete icons"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-                                <div class="integeration-social-title">Austin Ejem</div>
-                                <div class="integretion-actions">
-                                    <button class="btn btn-integeration mr-0">Disconnect
-                                        <span class="flaticon-delete icons"></span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="social-section-wrap">
-                            <div class="integeration-title">
-                                Autoresponder Integration
-                            </div>
-
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-
-                                <div class="integretion-actions">
-                                    <button class="btn btn-integeration mr-0">Disconnect
-                                        <span class="flaticon-delete icons"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-
-                                <div class="integretion-actions">
-                                    <button class="btn btn-integeration mr-0">Disconnect
-                                        <span class="flaticon-delete icons"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="integeration-item">
-                                <img class="img-icon" src="../assets/icons/Create.svg" alt="">
-
-                                <div class="integretion-actions">
-                                    <button class="btn btn-integeration mr-0">Disconnect
-                                        <span class="flaticon-delete icons"></span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                     <div class="tab-pane container fade" id="menu2">
                         <div class="row justify-content-between">

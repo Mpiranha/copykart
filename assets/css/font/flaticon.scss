@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?7c8555f4c4bdb0113b61405300b79412") format("truetype"),
-url("./flaticon.woff?7c8555f4c4bdb0113b61405300b79412") format("woff"),
-url("./flaticon.woff2?7c8555f4c4bdb0113b61405300b79412") format("woff2"),
-url("./flaticon.eot?7c8555f4c4bdb0113b61405300b79412#iefix") format("embedded-opentype"),
-url("./flaticon.svg?7c8555f4c4bdb0113b61405300b79412#flaticon") format("svg");
+    src: url("./flaticon.ttf?0345b84c7e5d181467bf4a985c71803f") format("truetype"),
+url("./flaticon.woff?0345b84c7e5d181467bf4a985c71803f") format("woff"),
+url("./flaticon.woff2?0345b84c7e5d181467bf4a985c71803f") format("woff2"),
+url("./flaticon.eot?0345b84c7e5d181467bf4a985c71803f#iefix") format("embedded-opentype"),
+url("./flaticon.svg?0345b84c7e5d181467bf4a985c71803f#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -72,20 +72,22 @@ $flaticon-map: (
     "right-arrow-angle": "\f131",
     "right-arrow": "\f132",
     "search": "\f133",
-    "settings": "\f134",
-    "shield": "\f135",
-    "shuffle": "\f136",
-    "smartphone": "\f137",
-    "students-cap": "\f138",
-    "tablet": "\f139",
-    "task": "\f13a",
-    "trophy": "\f13b",
-    "twitter": "\f13c",
-    "unlocked-padlock-filled-shape": "\f13d",
-    "user-1": "\f13e",
-    "user-2": "\f13f",
-    "user-image-with-black-background": "\f140",
-    "user": "\f141",
+    "settings-1": "\f134",
+    "settings": "\f135",
+    "shield": "\f136",
+    "shuffle": "\f137",
+    "smartphone": "\f138",
+    "students-cap": "\f139",
+    "tablet": "\f13a",
+    "task": "\f13b",
+    "trash": "\f13c",
+    "trophy": "\f13d",
+    "twitter": "\f13e",
+    "unlocked-padlock-filled-shape": "\f13f",
+    "user-1": "\f140",
+    "user-2": "\f141",
+    "user-image-with-black-background": "\f142",
+    "user": "\f143",
 );
 
 .flaticon-add-1:before {
@@ -241,6 +243,9 @@ $flaticon-map: (
 .flaticon-search:before {
     content: map-get($flaticon-map, "search");
 }
+.flaticon-settings-1:before {
+    content: map-get($flaticon-map, "settings-1");
+}
 .flaticon-settings:before {
     content: map-get($flaticon-map, "settings");
 }
@@ -261,6 +266,9 @@ $flaticon-map: (
 }
 .flaticon-task:before {
     content: map-get($flaticon-map, "task");
+}
+.flaticon-trash:before {
+    content: map-get($flaticon-map, "trash");
 }
 .flaticon-trophy:before {
     content: map-get($flaticon-map, "trophy");
