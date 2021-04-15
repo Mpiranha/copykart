@@ -2455,7 +2455,7 @@ input:checked+.slider:before {
 }
 
 .x-padding-left {
-    padding-left: 1.5rem;
+    padding-left: 4rem;
 }
 
 .user-setting-input {
@@ -2568,7 +2568,7 @@ input:checked+.slider:before {
 }
 
 .trophy-icon {
-    width: 4rem;
+    width: 7rem;
 }
 
 .trophy-icon~.desc {
@@ -2578,13 +2578,14 @@ input:checked+.slider:before {
 
 .access-title {
     font-size: 0.7rem;
+    font-weight: bold;
     letter-spacing: 0.5px;
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
 }
 
 .access-level-item {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     font-size: 0.9rem;
     font-weight: 550;
     color: #838383;
@@ -3388,6 +3389,51 @@ input:checked+.slider:before {
 .upload-wrap .form-info {
     top: 1.225rem;
     right: 56%;
+}
+
+.access-level-item .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+
+.access-level-item .header .text,
+.access-level-item .header .value {
+    font-size: 0.7rem;
+}
+
+.access-level-item .progress {
+    height: 0.4rem;
+}
+
+.access-level-item .progress .progress-bar {
+    background-color: #4bc0f2;
+}
+
+.plan-wrap {
+    border-bottom: 1px solid #797981;
+    padding: 1rem 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-wrap .plan-title,
+.plan-wrap ~.desc {
+    color: #797981;
+}
+
+.plan-wrap ~.desc {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.plan-wrap .plan-title {
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
 @keyframes float-in {
