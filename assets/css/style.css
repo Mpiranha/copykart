@@ -2106,7 +2106,7 @@ input:checked+.slider:before {
 
 .workspace-empty,
 .workspace-not-empty {
-    margin-top: 3rem;
+    margin-top: 8rem;
     height: calc(100vh - 100px);
 }
 
@@ -2122,6 +2122,11 @@ input:checked+.slider:before {
     font-size: 1.1rem;
     border-radius: 1.3rem;
     margin-bottom: 3rem;
+}
+
+.workspace-item img.logo-workspace {
+    width: 1.5rem;
+    margin-right: 2rem;
 }
 
 .info-workspace-icon::before {
@@ -2140,8 +2145,10 @@ input:checked+.slider:before {
     background-color: #d7d8dc;
     border-radius: 50%;
     border: 1px solid #4b515c;
-    padding: 0.675rem 1.05rem;
+    padding: 1.175rem 1.15rem;
     margin-bottom: 1rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 .create-btn-wrap .btn-create-workspace i::before {
@@ -2282,7 +2289,7 @@ input:checked+.slider:before {
 }
 
 .workspace-not-empty-inner .title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
@@ -2297,7 +2304,7 @@ input:checked+.slider:before {
     background-color: #ecf1fa;
     font-size: 0.9rem;
     align-items: center;
-    width: 456px;
+    width: 520px;
     padding: 0.7rem 1rem 0.7rem 0.6rem;
     border-radius: 0.7rem;
     margin-bottom: 1rem;
@@ -2318,7 +2325,7 @@ input:checked+.slider:before {
 
 
 .workspace-item .workspace-title {
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .team-icons-wrap {
@@ -2355,13 +2362,14 @@ input:checked+.slider:before {
 .btn-workspace-action i::before {
     font-size: 0.7rem;
     margin-right: 0.4rem;
+    font-weight: bold !important;
 }
 
 .btn-create-workspace-simple {
-    color: #5f87ea;
-    background-color: #ecf1fa;
-    font-size: 0.7rem;
-    padding: 0.5rem 0.9rem;
+    color: #ffffff;
+    background-color: #2263de;
+    font-size: 0.9rem;
+    padding: 0.7rem 1.3rem;
     margin-top: 1.5rem;
 }
 
@@ -3420,11 +3428,11 @@ input:checked+.slider:before {
 }
 
 .plan-wrap .plan-title,
-.plan-wrap ~.desc {
+.plan-wrap~.desc {
     color: #797981;
 }
 
-.plan-wrap ~.desc {
+.plan-wrap~.desc {
     font-size: 0.9rem;
     font-weight: bold;
 }
