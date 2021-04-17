@@ -215,6 +215,11 @@
     autosize($('#textarea-desc'));
     editCopy('#title-comp', '#textarea-title');
     editCopy('#desc-comp', '#textarea-desc');
+    editCopy('#title-comp-one', '#textarea-title-one');
+    editCopy('#title-comp-two', '#textarea-title-two');
+    editCopy('#title-comp-three', '#textarea-title-three');
+    editCopy('#title-comp-four', '#textarea-title-four');
+    editCopy('#title-comp-five', '#textarea-title-five');
 
     function editCopy(elem, targetArea) {
         $(elem).on('click', function () {

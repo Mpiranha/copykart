@@ -1,6 +1,6 @@
 (function () {
 
-    class Counter {
+    class CounterTwo {
         constructor(quill, options) {
             this.quill = quill;
             this.options = options;
@@ -32,7 +32,7 @@
 
 
     // Implement and register module
-    Quill.register('modules/counter', Counter);
+    //QuillTwo.register('modules/counter', CounterTwo);
 
     var toolbarOptions = [
         [{
@@ -86,27 +86,26 @@
         ['clean'] // remove formatting button
     ];
 
-    var quill = new Quill('#top-content', {
+    var quillTwo = new Quill('#top-content-two', {
         modules: {
-            toolbar: toolbarOptions,
-            counter: {
-                container: '#counter',
-                unit: 'word'
-            }
+            toolbar: toolbarOptions
+            // ,
+            // counter: {
+            //     container: '#counter',
+            //     unit: 'word'
+            // }
         },
         theme: 'snow'
     });
 
-    quill.on('selection-change', function (range, oldRange, source) {
+    quillTwo.on('selection-change', function (range, oldRange, source) {
         if (range === null && oldRange !== null) {
-            //addToLog('blur');
-            console.log($(this));
+            //addToLog($(this));
+            //console.log($(this));
             $('.ql-toolbar.ql-snow').css('display', 'none');
         } else if (range !== null && oldRange === null)
             //addToLog('focus');
             $('.ql-toolbar.ql-snow').css('display', 'block');
     });
-
-
 
 })();

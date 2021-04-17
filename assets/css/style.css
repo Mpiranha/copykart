@@ -1,9 +1,9 @@
 @import url('font/flaticon.css');
 
-/* html {
+ html.scale-width {
     zoom: 90%;
     transform: scaleX(0.9);
-} */
+}
 
 .icons::before {
     margin: 0;
@@ -3536,11 +3536,63 @@ input:checked+.slider:before {
     font-weight: 490;
 }
 
+.landing-page-wrap .page-section .title ~ textarea {
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+.landing-page-wrap .page-section .title ~ textarea:focus {
+    box-shadow: none;
+}
+
 .seo-wrap .meta-wrap {
     background-color: #f7f7f7;
     margin-top: 1.5rem;
     padding: 0.8rem 0;
 }
+
+.seo-wrap .bottom-section .title,
+.seo-wrap .meta-wrap .meta-title {
+    font-size: 1.2rem;
+}
+
+.seo-wrap .bottom-section .title {
+    color: #007bff;
+    font-weight: 400;
+}
+
+.seo-wrap .bottom-section #textarea-title {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.seo-wrap .editor-top p, .seo-wrap .meta-wrap .meta-content  {
+    font-size: 1rem !important;
+}
+
+.seo-wrap .seo-counter-wrap {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #cfc8d8;
+}
+
+.seo-wrap .seo-counter-wrap .count-divider {
+    margin: 0 0.7rem;
+}
+
+.seo-wrap .seo-counter-wrap .desc-counter-text span{
+    color: #ff0000;
+}
+
+.seo-wrap .icon-action .word-count-wrap {
+    visibility: hidden;
+}
+
+
 
 @keyframes float-in {
     from {
