@@ -3444,6 +3444,104 @@ input:checked+.slider:before {
     margin-top: 1rem;
 }
 
+.insta-btn-install {
+    background-color: #ff0000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.insta-btn-install i {
+    font-size: 0.6rem;
+}
+
+.insta-user-interaction {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.insta-user-interaction .left-section img {
+    width: 1.3rem;
+}
+
+.insta-user-interaction .right-section img {
+    width: 1rem;
+}
+
+.insta-user-interaction .left-section .nav-link {
+    padding: 0 0;
+    margin-right: 1rem;
+}
+
+.insta-wrap .user-secondary-action {
+    margin-top: 0.5rem;
+}
+
+.blog-idea-wrap .bottom-section .title {
+    font-size: 1.7rem;
+}
+
+.blog-idea-wrap #textarea-title {
+    font-size: 1.7rem
+}
+
+.tagline-wrap .bottom-section {
+    margin-top: 2rem;
+}
+
+.tagline-wrap .bottom-section .title {
+    font-size: 1.1rem;
+}
+
+.prod-desc-wrap .bottom-section .title {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.prod-desc-wrap .bottom-section textarea {
+    font-size: 1.1rem;
+}
+
+.prod-desc-wrap .bottom-section .price {
+    font-size: 1rem;
+}
+
+.prod-desc-wrap .bottom-section button {
+    font-size: 0.5rem;
+    margin: 0.8rem 0;
+    padding: 0.3rem 0.8rem;
+    font-weight: bold;
+}
+
+.landing-page-wrap .page-section {
+    padding: 0 0.5rem;
+}
+
+.landing-page-wrap .page-section .name {
+    color: #c3c3c3;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.landing-page-wrap .page-section .title {
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 490;
+}
+
+.seo-wrap .meta-wrap {
+    background-color: #f7f7f7;
+    margin-top: 1.5rem;
+    padding: 0.8rem 0;
+}
+
 @keyframes float-in {
     from {
         transform: translate(7px, 0px);

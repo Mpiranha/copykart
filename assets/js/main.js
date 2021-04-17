@@ -222,6 +222,7 @@
             console.log($.trim($(this).text()));
             $(this).css('display', 'none');
             $(targetArea).css('display', 'inline');
+            $(targetArea).focus();
         });
 
         $(targetArea).on('blur', function () {

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="Group_1005" data-name="Group 1005" transform="translate(-1045 -571)">
+    <g id="Group_249" data-name="Group 249" transform="translate(427 290)" opacity="0.1">
+      <g id="Group_244" data-name="Group 244" transform="translate(437 16)">
+        <circle id="Ellipse_82" data-name="Ellipse 82" cx="31.5" cy="31.5" r="31.5" transform="translate(181 265)" fill="#f55"/>
+      </g>
+    </g>
+    <g id="article_black_24dp" transform="translate(1062.114 588.115)">
+      <rect id="Rectangle_799" data-name="Rectangle 799" width="30" height="30" transform="translate(-0.115 -0.115)" fill="none"/>
+      <g id="Group_924" data-name="Group 924" transform="translate(3.721 3.721)">
+        <path id="Path_2984" data-name="Path 2984" d="M22.847,5.481V22.847H5.481V5.481H22.847m0-2.481H5.481A2.488,2.488,0,0,0,3,5.481V22.847a2.488,2.488,0,0,0,2.481,2.481H22.847a2.488,2.488,0,0,0,2.481-2.481V5.481A2.488,2.488,0,0,0,22.847,3Z" transform="translate(-3 -3)" fill="#f55"/>
+      </g>
+      <path id="Path_2985" data-name="Path 2985" d="M15.683,19.4H7V16.924h8.683ZM19.4,14.443H7V11.962H19.4Zm0-4.962H7V7H19.4Z" transform="translate(1.683 1.683)" fill="#f55"/>
+    </g>
+  </g>
+</svg>
