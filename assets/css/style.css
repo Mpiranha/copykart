@@ -2472,6 +2472,7 @@ input:checked+.slider:before {
     border-radius: 0.5rem;
     height: calc(1.5em + 0.65rem + 2px);
     font-size: 0.8rem;
+    padding: 1.475rem 0.75rem;
 }
 
 .profile-image-upload {
@@ -3647,6 +3648,10 @@ input:checked+.slider:before {
     .container-sm,
     .container-xl {
         max-width: 1240px;
+    }
+
+    .container-wide {
+        max-width: 1140px !important;
     }
 }
 
