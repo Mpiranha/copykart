@@ -1,6 +1,6 @@
 @import url('font/flaticon.css');
 
- html.scale-width {
+html.scale-width {
     zoom: 90%;
     transform: scaleX(0.9);
 }
@@ -3537,7 +3537,7 @@ input:checked+.slider:before {
     font-weight: 490;
 }
 
-.landing-page-wrap .page-section .title ~ textarea {
+.landing-page-wrap .page-section .title~textarea {
     font-weight: 400;
     font-size: 1.3rem;
     text-align: center;
@@ -3545,7 +3545,7 @@ input:checked+.slider:before {
     border: none;
 }
 
-.landing-page-wrap .page-section .title ~ textarea:focus {
+.landing-page-wrap .page-section .title~textarea:focus {
     box-shadow: none;
 }
 
@@ -3570,7 +3570,8 @@ input:checked+.slider:before {
     color: #007bff;
 }
 
-.seo-wrap .editor-top p, .seo-wrap .meta-wrap .meta-content  {
+.seo-wrap .editor-top p,
+.seo-wrap .meta-wrap .meta-content {
     font-size: 1rem !important;
 }
 
@@ -3585,13 +3586,148 @@ input:checked+.slider:before {
     margin: 0 0.7rem;
 }
 
-.seo-wrap .seo-counter-wrap .desc-counter-text span{
+.seo-wrap .seo-counter-wrap .desc-counter-text span {
     color: #ff0000;
 }
 
 .seo-wrap .icon-action .word-count-wrap {
     visibility: hidden;
 }
+
+.email-wrap .editor-top p {
+    font-size: 0.8rem !important;
+}
+
+.subject-wrap {
+    background-color: #f4f7fa;
+    padding: 1rem 0.6rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.subject-wrap .text {
+    font-size: 0.8rem;
+
+}
+
+.email-wrap .bottom-section .title,
+.email-wrap .bottom-section #textarea-title {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    width: 100%;
+}
+
+.email-wrap .bottom-section #textarea-title:focus {
+    background-color: transparent;
+}
+
+.responder-box {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 200px;
+    align-items: center;
+}
+
+.responder-box img {
+    width: 6rem;
+    margin-bottom: 1rem;
+}
+
+.responder-box .responder-title {
+    font-size: 1.2rem;
+}
+
+.success-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-msg img {
+    width: 5rem;
+}
+
+.success-msg .text,
+.success-msg .desc {
+    text-align: center;
+}
+
+.success-msg .text {
+    font-size: 2.5rem;
+    font-weight: boold;
+}
+
+.success-msg .desc {
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
+
+.copy-main-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy-item-wrap {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 1rem;
+}
+
+.copy-alert-wrap {
+    background-color: #0000006b;
+    color: #ffffff;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+    display: none;
+}
+
+.copy-item-wrap .label {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.copy-item-wrap .copy-elem {
+    display: flex;
+    align-items: center;
+    background-color: #e7e8eb;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.7rem;
+    position: relative;
+}
+
+.copy-item-wrap .copy-elem input {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.copy-item-wrap .copy-elem button {
+    background-color: transparent;
+    border: none;
+    padding: 0.35rem 0.3rem;
+}
+
+.copy-item-wrap .copy-elem button i::before {
+    color: #181e3a;
+    font-size: 2rem;
+}
+
+.btn-close-copy-modal {
+    color: #95949a;
+}
+
 
 
 

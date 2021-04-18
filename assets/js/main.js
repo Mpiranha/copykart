@@ -170,7 +170,7 @@
         $('.search-wrap input').focus();
     });
 
-    $('.forward-btn').on('click', function () {
+    $('button.forward-btn').on('click', function () {
         $('.floating-socials').toggleClass('show');
     });
 
@@ -197,6 +197,23 @@
     $('.editor-image-wrap img').on('click', function () {
         $('.bd-example-modal-lg').modal('show')
     });
+
+    $('.copy-form-info').each(function () {
+        $(this).on('click', function () {
+            copyText = $(this).parent().children('input');
+            alertBox = $(this).parent().children('.copy-alert-wrap');
+            //console.log( $(this).parent().children('input') );
+
+            copyText.select();
+            copyText[0].setSelectionRange(0, 99999);
+
+            document.execCommand("copy");
+            alertBox.addClass('show-flex');
+            setTimeout(function () {
+                alertBox.removeClass('show-flex');
+            }, 2000);
+        });
+    })
 
 
 
