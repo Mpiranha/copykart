@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <g id="Group_225" data-name="Group 225" transform="translate(-237 -305.145)">
-    <circle id="Ellipse_78" data-name="Ellipse 78" cx="15" cy="15" r="15" transform="translate(237 305.145)" fill="#2263de"/>
-    <path id="Union_15" data-name="Union 15" d="M4,10V8H2A2,2,0,0,1,2,4H4V2A2,2,0,0,1,8,2V4h2a2,2,0,0,1,0,4H8v2a2,2,0,0,1-4,0Z" transform="translate(246 314.145)" fill="#fff"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><g id="Group_225" data-name="Group 225" transform="translate(-237 -305.145)"><circle id="Ellipse_78" cx="15" cy="15" r="15" fill="#2263de" data-name="Ellipse 78" transform="translate(237 305.145)"/><path id="Union_15" fill="#fff" d="M4,10V8H2A2,2,0,0,1,2,4H4V2A2,2,0,0,1,8,2V4h2a2,2,0,0,1,0,4H8v2a2,2,0,0,1-4,0Z" data-name="Union 15" transform="translate(246 314.145)"/></g></svg>
